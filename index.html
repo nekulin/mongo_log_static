@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <title>Static RealTime</title>
+</head>
+<body>
+    Search Static
+    <form method="post" action="/static.php" id="static">
+        <p>
+            Partner
+            <select name="partner_id">
+                <option value="">All</option>
+                <option value="0">Partner 0</option>
+                <option value="1">Partner 1</option>
+                <option value="2">Partner 2</option>
+                <option value="3">Partner 3</option>
+                <option value="4">Partner 4</option>
+                <option value="5">Partner 5</option>
+                <option value="6">Partner 6</option>
+                <option value="7">Partner 7</option>
+                <option value="8">Partner 8</option>
+                <option value="9">Partner 9</option>
+            </select>
+        </p>
+        <p>
+            Country Code
+            <select name="coutry_code">
+                <option value="">All</option>
+                <option>RU</option>
+            </select>
+        </p>
+        <p>
+            Operator
+            <select name="operator_id">
+                <option value="">All</option>
+                <option value="0">Op1</option>
+                <option value="1">Op2</option>
+                <option value="2">Op3</option>
+                <option value="3">Op4</option>
+            </select>
+        </p>
+        <p>
+            Date
+            <input name="date_from" placeholder="date from">
+            <input name="date_to" placeholder="date to">
+        </p>
+
+        <input type="submit" value="search">
+    </form>
+    <div id="results"></div>
+</body>
+</html>
